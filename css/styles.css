@@ -1,0 +1,779 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 20;
+    direction: center;
+
+}
+
+.loading {
+    overflow: hidden;
+}
+
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.preloader-content {
+    text-align: center;
+}
+
+.preloader-monogram {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+
+.preloader-year {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.loading-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-progress {
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #333;
+    animation: loading 3s infinite;
+}
+
+@keyframes loading {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 0;
+    
+}
+
+.top-bar-content {
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    background-color: #fff;
+    padding: 1rem 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #555;
+}
+
+.nav-cta {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid #333;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+.btn-secondary {
+    background-color: transparent;
+}
+
+.btn-secondary:hover {
+    background-color: #f9f9f9;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 3rem 0;
+    background: url('https://capellahotels.com/assets/img/site_images/global/global-home-aboutcapella02b.jpg') no-repeat center center/cover;
+    color: rgb(98, 4, 4);
+    text-align: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-ornament {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.hero .hero-subtitle{
+    color: rgb(122, 47, 47);
+}
+.hero .hero-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    color: maroon;
+}
+
+.hero .hero-description {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+}
+.hero .hero-cta{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-cta .btn {
+    margin: 0 0.5rem;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+/* Sección Historia */
+.legacy-section {
+    padding: 4rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header-ornament {
+    width: 50px;
+    height: 5px;
+    background-color: #333;
+    margin: 0 auto 1rem;
+}
+
+.section-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.timeline-date {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 600px;
+}
+
+.timeline-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-content p {
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+}
+
+.ornament-corner {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    border-top-left-radius: 0.5rem;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    border-top-right-radius: 0.5rem;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 0.5rem;
+}
+
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+[data-aos][data-aos][data-aos-duration="400"] {
+    transition-duration: 400ms;
+}
+
+.experience-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px auto;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sección Contacto */
+.contact-section {
+    padding: 4rem 0;
+    background-color: #f4f4f4;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.btn-primary {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#ex1 {
+    position: relative; /* Se mantiene el contenedor en relación */
+    display: inline-block; /* Permite que el contenedor se ajuste al tamaño de la imagen */
+}
+
+#ex1 img {
+    max-width: 100%;  /* Limita el ancho máximo al 100% del contenedor */
+    height: auto;     /* Mantiene la proporción de la imagen */
+    display: block;   /* Elimina los márgenes no deseados */
+}
+
+
+
+/* Contenedor con el ID 'ex2' */
+#ex2 {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en nuevas líneas si el espacio es reducido */
+}
+
+/* Estilo para las imágenes dentro del contenedor 'ex2' */
+#ex2 img {
+    width: 48%; /* El 48% del contenedor, ajustando ambas imágenes al mismo tamaño */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+    border-radius: 10px; /* Opción para bordes redondeados si se desea */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    #ex2 img {
+        width: 100%; /* Las imágenes ocupan el 100% del ancho en pantallas pequeñas */
+    }
+}
+/* Estilos para la sección de comentarios y carrusel */
+.comments-carousel-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.comments-container {
+    margin-bottom: 2rem;
+}
+
+.comments-container h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#comment-form .form-group {
+    margin-bottom: 1rem;
+}
+
+#comment-form input, #comment-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+}
+
+#comments-list {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.carousel-container {
+    margin-top: 2rem;
+}
+
+.carousel-container h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-media-links a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 1rem;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.galeria {
+    display: flex;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+.galeria img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: .7s ease;
+}
+
+.galeria img:hover {
+    width: 50%;
+    opacity: 1;
+    filter: brightness(130%);
+}
+
+.transparente {
+    opacity: 0;
+}
+
+@media (max-width: 600px) {
+    .galeria {
+        flex-direction: column;
+        max-height: none;
+    }
+    
+    .galeria img {
+        width: 100%;
+        flex-grow: 1;
+        object-fit: cover;
+        filter: brightness(80%);
+        transition: .7s ease;
+    }
+    
+    .galeria img:hover {
+        width: 100%;
+        opacity: 1;
+        filter: brightness(130%);
+    }
+}
+
+#footer-section {
+    background-color: #282828;
+    color: #ffffff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+}
+
+#footer-section .col {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+#footer-section .col p {
+    margin: 0.5rem 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    #footer-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #footer-section .col {
+        margin: 1rem 0;
+    }
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.card {
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+#social-media-title {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+#social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+    background-color: #f0f0f0;
+}
+
+#social-media-links a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+#social-media-links a:hover {
+    color: #e27024;
+}
+
+/* Contenedor para centrar las tarjetas */
+/* Contenedor para centrar las tarjetas */
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples filas */
+    row-gap: 10px; /* Ajusta la separación vertical */
+    column-gap: 10px; /* Ajusta la separación horizontal */
+    height: 100vh;
+    background-color: #f0f0f0; /* Color de fondo opcional */
+}
+
+/* Ajuste de márgenes en las tarjetas */
+.card3 {
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 0; /* Eliminamos cualquier margen adicional */
+}
+
+
+
+/* Estilos de la tarjeta */
+.card3 {
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    perspective: 1000px; /* Agrega perspectiva para el efecto de rotación */
+}
+
+.card3 .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card3 .front {
+    transform: rotateY(0deg);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card3 .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card3 .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.card3 .back {
+    transform: rotateY(180deg);
+    background: rgb(3, 35, 54);
+    color: #f3f3f3;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card3 .back h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card3 .back p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.card3 .back .link {
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card3 .back .link a {
+    color: #f3f3f3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.card3 .back .link a:hover {
+    color: #ffd700; /* Color al pasar el ratón */
+}
+
+/* Efecto de rotación */
+.card3:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.card3:hover .back {
+    transform: rotateY(0deg);
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gilded Manor | Elegancia Atemporal desde 1892</title>
+    
+    <!-- Fuentes más sofisticadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Librerías adicionales -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="loading">
+    <!-- Preloader elegante -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-monogram">TGM</div>
+            <div class="preloader-year">EST. 1892</div>
+            <div class="loading-bar">
+                <span class="loading-progress"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header con Top Bar y Navegación -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> +1 234 567 890</span>
+                        <span><i class="fas fa-envelope"></i> info@gildedmanor.com</span>
+                    </div>
+                    <div class="language-selector">
+                        <select id="languageSelect" onchange="changeLanguage(this.value)">
+                            <option value="en">EN</option>
+                            <option value="es">ES</option>
+                            <option value="fr">FR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegación Principal -->
+        <div class="nav-container">
+            <div class="container">
+                <nav class="nav-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="https://th.bing.com/th/id/OIP.p8klQQH12_5D8Ur2AzhxDgHaHa?rs=1&pid=ImgDetMain" height="80" width="60" alt="The Gilded Manor Logo">
+                        </a>
+                    </div>
+                    <div class="nav-links">
+                        <a href="history.html" class="nav-link">Historia</a>
+                        <a href="gallery.html" class="nav-link">Galería</a>
+                        <a href="services.html" class="nav-link">Servicios</a>
+                        <a href="reservations.html" class="nav-link">Reservaciones</a>
+                        <a href="cart.html" class="nav-link">Carrito</a>
+                    </div>
+                    <div class="nav-cta">
+                        <a href="reservations.html" class="btn btn-primary">Reservar Ahora</a>
+                    </div>
+                    <!-- Menú hamburguesa para móvil -->
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section con elementos clásicos -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-ornament top"></div>
+            <span class="hero-subtitle" data-translate="hero.welcome">Bienvenido a</span>
+            <h1 class="hero-title">
+                <span class="title-line">The Gilded</span>
+                <span class="title-line">Manor</span>
+            </h1>
+            <p class="hero-description" data-translate="hero.tagline">
+                Un legado de elegancia desde 1892
+            </p>
+            <div class="hero-cta">
+                <a href="gallery.html" class="btn-primary" data-translate="hero.explore">
+                    Descubrir Suites
+                </a>
+                <a href="history.html" class="btn-secondary" data-translate="hero.history">
+                    Nuestra Historia
+                </a>
+            </div>
+            <div class="hero-ornament bottom"></div>
+        </div>
+        <div class="hero-image">
+            <img src="https://capellahotels.com/assets/img/site_images/shanghai/Your_Third_Night_on_Us_SEO.jpg"  height="500" width="300" alt="Luxury Manor">
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Sección Historia con elementos vintage -->
+    <section class="legacy-section" id="historia">
+        <div class="container section-fade-in">
+            <div class="section-header">
+                <div class="header-ornament"></div>
+                <span class="section-subtitle">Nuestro Legado</span>
+                <h2 class="section-title">Una Historia de Excelencia</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">1892</div>
+                    <div class="timeline-content">
+                        <div class="ornament-corner top-left"></div>
+                        <div class="ornament-corner top-right"></div>
+                        <h3>Los Cimientos de la Elegancia</h3>
+                        <p>La familia Vanderbilt establece The Gilded Manor como símbolo de la opulencia y el refinamiento de la Edad Dorada.</p>
+                        <div class="ornament-corner bottom-left"></div>
+                        <div class="ornament-corner bottom-right"></div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">1920</div>
+                    <div class="timeline-content">
+                        <h3>La Era del Jazz</h3>
+                        <p>The Gilded Manor se convierte en el epicentro de la alta sociedad, acogiendo las fiestas más exclusivas de la época.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">1950</div>
+                    <div class="timeline-content">
+                        <h3>Renovación y Modernidad</h3>
+                        <p>Una cuidadosa restauración preserva la esencia histórica mientras incorpora comodidades modernas.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">Actual</div>
+                    <div class="timeline-content">
+                        <h3>Legado Continuado</h3>
+                        <p>Mantenemos viva la tradición de excelencia mientras nos adaptamos a las expectativas del lujo contemporáneo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencias -->
+    <section class="experiences-section" id="experiencias">
+        <div class="container section-fade-in">
+            <div class="section-header">
+                <div class="header-ornament"></div>
+                <span class="section-subtitle">Experiencias Únicas</span>
+                <h2 class="section-title">Momentos Inolvidables</h2>
+            </div>
+
+            <div class="experiences-grid">
+                <div  id="ex1" class="experience-card" data-aos="fade-up">
+                    <div  class="experience-image">
+                        <img src="imagenes/masage.jpeg" alt="Spa Experience">
+                        <div class="experience-overlay">
+                            <span class="experience-category">Bienestar</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>The Gilded Spa</h3>
+                        <p>Sumérjase en un oasis de tranquilidad con tratamientos exclusivos y terapias personalizadas.</p>
+                        <a href="#" class="btn-secondary">Descubrir Más</a>
+                    </div>
+                </div>
+
+                <div id="ex1"  class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="experience-image">
+                        <img src="imagenes/experre.webp" alt="Fine Dining">
+                        <div class="experience-overlay">
+                            <span class="experience-category">Gastronomía</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Cena Privada</h3>
+                        <p>Una experiencia gastronómica personalizada con nuestro chef ejecutivo en ubicaciones exclusivas.</p>
+                        <a href="#" class="btn-secondary">Reservar Ahora</a>
+                    </div>
+                </div>
+
+                <div  id="ex1" class="experience-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="experience-image">
+                        <img src="imagenes/dora.webp" alt="Heritage Tour">
+                        <div class="experience-overlay">
+                            <span class="experience-category">Cultural</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Tour Histórico</h3>
+                        <p>Descubra los secretos y la historia de The Gilded Manor en un tour privado exclusivo.</p>
+                        <a href="#" class="btn-secondary">Explorar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events" id="eventos">
+
+        <div class="section-header">
+            <div class="header-ornament"></div>
+            <span class="section-subtitle">Eventos Especiales</span>
+            <h2 class="section-title">Celebraciones Memorables</h2>
+        </div>
+        
+        <div id="eventos">
+            <div class="card-wrapper">
+                <div class="card3">
+                    <div class="face front">
+                        <img src="imagenes/bo.jpg" alt="Imagen de boda">
+                        <h3>Bodas en sueño</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Bodas en sueño</h3>
+                        <p>Creamos ceremonias únicas y personalizadas a tu gusto</p>
+                        <div class="link">
+                            <a href="#reservations">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <div class="face front">
+                        <img src="imagenes/events.jpg" alt="">
+                        <h3>Eventos Corporativos</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Eventos Corporativos</h3>
+                        <p>Espacios elegantes para reuniones y conferencias exclusivas.</p>
+                        <div class="link">
+                            <a href="#reservations">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <div class="face front">
+                        <img src="imagenes/expo.jpg" alt="">
+                        <h3>Eventos Corporativos</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Eventos Corporativos</h3>
+                        <p>Espacios elegantes para reuniones y festividades exclusivas.</p>
+                        <div class="link">
+                            <a href="#reservations">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        <section class="comments-carousel-section">
+            <h2>Comentarios y Publicaciones</h2>
+            <div id="card-container" class="row">
+                <div class="card">
+                    <img src="https://media-library.stackla.com/10/capellahotels/2019-08/5d524d81ed8762c304665256_277c0c60-be46-11e9-9554-b50d8b9bbfe7.jpeg?format=webp" alt="Image 1">
+                </div>
+                <div class="card">
+                    <img src="https://media-library.stackla.com/10/capellahotels/2021-06/60aa2a9c1bd59974bb6e7a76_e5349960-c52a-11eb-a0b7-07e0b7fcbbd8.jpeg?format=webp" alt="Image 2">
+                </div>
+                <div class="card">
+                    <img src="https://media-library.stackla.com/10/capellahotels/2019-05/5cc3f7017fb15e467fc94606_40a68c10-6e4b-11e9-90e7-25c5f8c0c1dd.jpeg?format=webp" alt="Image 3">
+                </div>
+                <div class="card">
+                    <img src="https://media-library.stackla.com/10/capellahotels/2019-12/5e010f8b96432feb98df6c07_65c13590-2633-11ea-b21a-c177f18ba368.jpeg?format=webp" alt="Image 4">
+                </div>
+                <div class="card">
+                    <img src="https://media-library.stackla.com/10/capellahotels/2019-08/5d4dfb81bf1ec94a33cd3a46_71d53e30-be37-11e9-8254-7b25d2562abc.jpeg?format=webp" alt="Image 5">
+                </div>
+                <div class="card">
+                    <img src="https://media-library.stackla.com/10/capellahotels/2019-12/5de4fda855b2d6f1655909c3_010fd440-156b-11ea-9724-0fa3d05e4a6a.jpeg" alt="Image 6">
+                </div>
+                <div class="card">
+                    <img src="https://media-library.stackla.com/10/capellahotels/2019-10/5db0421ededf814899e17468_76550cf0-f58d-11e9-b959-d3eecb400520.jpeg" alt="Image 7">
+                </div>
+                <div class="card">
+                    <img src="https://media-library.stackla.com/10/capellahotels/2019-10/5da0f8d4bb8868cc60200bfe_f58028a0-ec70-11e9-b635-35df2391bda7.jpeg?format=webp" alt="Image 8">
+                </div>
+                <div class="card">
+                    <img src="https://media-library.stackla.com/10/capellahotels/2021-06/6082bac4b893aeb2e0eef073_cfd59a90-cced-11eb-893f-af87e47965e4.jpeg" alt="Image 9">
+                </div>
+                <div class="card">
+                    <img src="https://scontent.cdninstagram.com/v/t51.2885-15/187403519_501072014354656_463729452552309895_n.jpg?stp=dst-jpg_e35_s640x640_sh0.08_tt6&_nc_ht=scontent.cdninstagram.com&_nc_cat=104&_nc_ohc=NOSP6G5uMB4Q7kNvgEfpe7a&_nc_gid=e8bef2c644974d6098ad04649cc3822e&edm=AMO9-JQAAAAA&ccb=7-5&oh=00_AYAT_iYE2bCse38YTbrcznC-7ixONpsEtxdVVg18aelzdA&oe=675910ED&_nc_sid=cc8940" alt="Image 10">
+                </div>
+            </div>
+        </div>
+            <div class="comments-container">
+                <h3>Deja tu comentario</h3>
+                <form id="comment-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comentario:</label>
+                        <textarea id="comment" name="comment" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                <div id="comments-list">
+                    <!-- Aquí se mostrarán los comentarios -->
+                </div>
+            </div>
+    </section>
+    <!-- Sección Carrusel -->
+
+    <section class="container-fluid">
+        <div class="galeria">
+          <img src="https://capellahotels.com/assets/img/site_images/hanoi/hanoi-home01a.jpg" alt="">
+          <img src="https://capellahotels.com/assets/img/site_images/shanghai/shanghai-gallery-05.jpg" alt="">
+          <img src="https://capellahotels.com/assets/img/site_images/global/Capella-Awards-big-01.jpg" alt="">
+          <img src="https://capellahotels.com/assets/img/site_images/singapore/singapore-destination-accommodation-04.jpg" alt="">
+          <img src="https://capellahotels.com/assets/img/site_images/singapore/Capella_Singapore_Home_Gallery-08.jpg" alt="">
+          <img src="https://capellahotels.com/assets/img/site_images/sanya/sanya-destination-accommodation-02a.jpg" alt="">
+          <img src="https://capellahotels.com/assets/img/site_images/sydney/Capella-Sydney-l-01b.jpg" alt="">
+          <img src="https://capellahotels.com/assets/img/site_images/sydney/Capella-Sydney-Gallery-01a.jpg_.jpg" alt="">
+          <img src="https://capellahotels.com/assets/img/site_images/global/festive2024chg-Hero1.jpg" alt="">
+          <img src="https://capellahotels.com/assets/img/site_images/kyoto/Capella_Kyoto_Dining.jpg" alt="">
+        </div>
+      </section>
+
+    <!-- Sección Contacto -->
+
+    <div id="footer-section" class="row">
+        <div id="footer-col1" class="col">
+            <p>Derechos reservados, esta página está protegida por la ley 1090.</p>
+            <p>Si encontramos similitudes a esta página será denunciada por derechos de autor.</p>
+            <p>Términos y condiciones, políticas de privacidad, políticas de calidad.</p>
+        </div>
+        <div id="footer-col2" class="col">
+            <p>Contáctanos a ejemplo@correo.com</p>
+            <p>Para facilitar el contacto, llámanos al 991.</p>
+            <p>O al 64-1234567.</p>
+        </div>
+        <div id="footer-col3" class="col">
+            <p>Instagram: @gildedmanor</p>
+            <p>Facebook: @egildedmanor</p>
+            <p>WhatsApp: 123456789</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

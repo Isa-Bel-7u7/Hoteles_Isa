@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - The Gilded Manor</title>
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- AOS CSS para animaciones de scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+    <div class="services-container">
+        <!-- Hero Section -->
+        <section class="services-hero">
+            <h1>Servicios Exclusivos</h1>
+            <p>Experiencias diseñadas para superar todas sus expectativas</p>
+        </section>
+
+        <!-- Servicios Principales -->
+        <section class="main-services">
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-image">
+                    <img src="imagenes/spa.jpg" alt="Spa & Bienestar">
+                </div>
+                <div class="service-content">
+                    <h2>Spa & Bienestar</h2>
+                    <p>Un santuario de paz y rejuvenecimiento, donde cada tratamiento es una experiencia sensorial única.</p>
+                    <ul class="service-features">
+                        <li>Masajes Terapéuticos</li>
+                        <li>Tratamientos Faciales</li>
+                        <li>Hidroterapia</li>
+                        <li>Sauna & Baño Turco</li>
+                    </ul>
+                    <button class="reserve-button">Reservar Experiencia</button>
+                </div>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-image">
+                    <img src="imagenes/dinig2.jpeg" alt="Gastronomía Exclusiva">
+                </div>
+                <div class="service-content">
+                    <h2>Gastronomía Exclusiva</h2>
+                    <p>Una aventura culinaria excepcional con ingredientes selectos y presentaciones artísticas.</p>
+                    <ul class="service-features">
+                        <li>Restaurante Gourmet</li>
+                        <li>Cena Privada</li>
+                        <li>Bar & Mixología</li>
+                        <li>Terraza al Aire Libre</li>
+                    </ul>
+                    <button class="reserve-button">Reservar Mesa</button>
+                </div>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-image">
+                    <img src="imagenes/events.jpg" alt="Eventos Especiales">
+                </div>
+                <div class="service-content">
+                    <h2>Eventos Especiales</h2>
+                    <p>Espacios sofisticados y servicios personalizados para ocasiones memorables.</p>
+                    <ul class="service-features">
+                        <li>Salones de Eventos</li>
+                        <li>Bodas & Celebraciones</li>
+                        <li>Reuniones Ejecutivas</li>
+                        <li>Servicio de Catering</li>
+                    </ul>
+                    <button class="reserve-button">Consultar Disponibilidad</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Adicionales -->
+        <section class="additional-services">
+            <h2>Servicios Complementarios</h2>
+            <div class="services-grid">
+                <div class="service-item" data-aos="fade-up">
+                    <div class="service-icon">
+                        <img src="imagenes/serv.jpeg" alt="Concierge">
+                    </div>
+                    <h3>Concierge Personal</h3>
+                    <p>Asistencia personalizada las 24 horas para satisfacer cualquier solicitud.</p>
+                </div>
+
+                <div class="service-item" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-icon">
+                        <img src="imagenes/trans.jpg" alt="Transporte">
+                    </div>
+                    <h3>Servicio de Transporte</h3>
+                    <p>Traslados privados y alquiler de vehículos de lujo con conductor.</p>
+                </div>
+
+                <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <img src="imagenes/gym.jpg" alt="Fitness">
+                    </div>
+                    <h3>Centro Fitness</h3>
+                    <p>Equipamiento de última generación y entrenadores personales.</p>
+                </div>
+
+                <div class="service-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-icon">
+                        <img src="imagenes/carru4.jpg" alt="Business">
+                    </div>
+                    <h3>Business Center</h3>
+                    <p>Espacios de trabajo equipados y servicios secretariales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="contact-section" data-aos="fade-up">
+            <div class="contact-content">
+                <h2>Servicio Personalizado</h2>
+                <p>Permítanos diseñar una experiencia única para usted</p>
+                <button class="contact-button">Contactar Concierge</button>
+            </div>
+        </section>
+
+        <!-- Modal de Reserva -->
+        <div class="service-modal" id="serviceModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2 class="modal-title">Reservar Servicio</h2>
+                <form id="serviceForm">
+                    <div class="form-group">
+                        <label for="serviceName">Servicio Seleccionado</label>
+                        <input type="text" id="serviceName" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceDate">Fecha Deseada</label>
+                        <input type="date" id="serviceDate" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceTime">Hora Preferida</label>
+                        <input type="time" id="serviceTime" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Número de Personas</label>
+                        <select id="guests" class="form-control" required>
+                            <option value="">Seleccione</option>
+                            <option value="1">1 Persona</option>
+                            <option value="2">2 Personas</option>
+                            <option value="3">3 Personas</option>
+                            <option value="4">4 Personas</option>
+                            <option value="5+">5 o más</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialRequests">Solicitudes Especiales</label>
+                        <textarea id="specialRequests" class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Confirmar Reserva</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>

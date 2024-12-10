@@ -1,0 +1,50 @@
+<!-- chat.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gilded Manor - Chat en Vivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <!-- Widget de chat -->
+    <div class="chat-widget" id="chatWidget">
+        <!-- Botón de chat minimizado -->
+        <button class="chat-button" id="chatButton">
+            <span class="chat-icon">💬</span>
+            <span class="chat-label">Chat en Vivo</span>
+        </button>
+
+        <!-- Ventana de chat -->
+        <div class="chat-window" id="chatWindow">
+            <!-- Encabezado del chat -->
+            <div class="chat-header">
+                <h3>Servicio al Cliente</h3>
+                <div class="chat-controls">
+                    <button class="minimize-btn" id="minimizeChat">−</button>
+                    <button class="close-btn" id="closeChat">×</button>
+                </div>
+            </div>
+
+            <!-- Área de mensajes -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- Los mensajes se agregarán dinámicamente -->
+            </div>
+
+            <!-- Área de entrada -->
+            <div class="chat-input-area">
+                <textarea id="chatInput" placeholder="Escriba su mensaje..."></textarea>
+                <button id="sendMessage">
+                    <span class="send-icon">➤</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

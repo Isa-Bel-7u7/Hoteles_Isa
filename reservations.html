@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones - The Gilded Manor</title>
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- AOS CSS para animaciones de scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reservations.css">
+    <link rel="stylesheet" href="css/reservations.css">
+    
+    
+</head>
+<body>
+    <div class="reservations-container">
+        <header class="reservation-header">
+            <h1>Reservaciones</h1>
+            <p>Una experiencia excepcional le espera</p>
+        </header>
+
+        <form class="search-form" id="searchForm">
+            <div class="search-grid">
+                <div class="form-group">
+                    <label for="checkIn">Fecha de llegada</label>
+                    <input type="date" id="checkIn" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOut">Fecha de salida</label>
+                    <input type="date" id="checkOut" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Huéspedes</label>
+                    <select id="guests" class="form-control" required>
+                        <option value="">Seleccione número de huéspedes</option>
+                        <option value="1">1 Huésped</option>
+                        <option value="2">2 Huéspedes</option>
+                        <option value="3">3 Huéspedes</option>
+                        <option value="4">4 Huéspedes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="search-button">
+                        Buscar Disponibilidad
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <div class="rooms-grid" id="roomsGrid"></div>
+    </div>
+
+    <!-- Modal de Reserva -->
+    <div class="reservation-modal" id="reservationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Completar Reservación</h2>
+            <form id="reservationForm">
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+             
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" class="form-control" required>
+                </div>
+                <div class="booking-summary">
+                    <div class="summary-row">
+                        <span>Suite Seleccionada:</span>
+                        <span id="selectedRoom"></span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Fechas:</span>
+                        <span id="selectedDates"></span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Total:</span>
+                        <span id="totalAmount"></span>
+                    </div>
+                </div>
+                <button type="submit" class="book-now">Confirmar Reservación</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/reservations.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

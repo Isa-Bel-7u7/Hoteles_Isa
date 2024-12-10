@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gilded Manor - Galería</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <header class="gallery-header">
+            <h1>Galería de Experiencias Exclusivas</h1>
+            <p>Descubra el epítome del lujo y la elegancia</p>
+        </header>
+
+        <nav class="gallery-navigation">
+            <div class="filter-buttons filter-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="suites">Suites</button>
+                <button class="filter-btn" data-filter="dining">Gastronomía</button>
+                <button class="filter-btn" data-filter="spa">Spa & Bienestar</button>
+                <button class="filter-btn" data-filter="events">Eventos</button>
+            </div>
+            <div class="view-options">
+                <button class="view-btn grid-view active">
+                    <i class="fas fa-th"></i>
+                </button>
+                <button class="view-btn list-view">
+                    <i class="fas fa-list"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="gallery-grid" id="lightgallery">
+            <!-- Suites -->
+            <div class="gallery-item" data-category="suites" data-src="images/suites/presidential-suite.jpg">
+                <img class="gallery-image" src="imagenes/Capell-Bangkok-Riverfront-01.jpg" alt="Suite Presidencial">
+                <div class="gallery-overlay">
+                    <h3>Suite Presidencial</h3>
+                    <p>400m² de lujo incomparable</p>
+                    <button class="view-details-btn" data-item-id="1">Ver Detalles</button>
+                </div>
+            </div>
+
+            <!-- Gastronomía -->
+            <div class="gallery-item" data-category="dining" data-src="images/dining/gourmet-restaurant.jpg">
+                <img class="gallery-image" src="imagenes/LRM_ITALIAN1.webp" alt="Restaurante Le Grand">
+                <div class="gallery-overlay">
+                    <h3>Le Grand Restaurant</h3>
+                    <p>Gastronomía de clase mundial</p>
+                    <button class="view-details-btn" data-item-id="2">Ver Detalles</button>
+                </div>
+            </div>
+
+            <!-- Spa -->
+            <div class="gallery-item" data-category="spa" data-src="images/spa/luxury-spa.jpg">
+                <img class="gallery-image" src="imagenes/accun.jpeg" alt="Spa de Lujo">
+                <div class="gallery-overlay">
+                    <h3>The Royal Spa</h3>
+                    <p>Experiencia de bienestar sublime</p>
+                    <button class="view-details-btn" data-item-id="3">Ver Detalles</button>
+                </div>
+            </div>
+
+            <!-- Eventos -->
+            <div class="gallery-item" data-category="events" data-src="images/events/grand-ballroom.jpg">
+                <img class="gallery-image" src="imagenes/bellesa.jpg" alt="Salón de Baile">
+                <div class="gallery-overlay">
+                    <h3>Gran Salón de Baile</h3>
+                    <p>Eventos memorables</p>
+                    <button class="view-details-btn" data-item-id="4">Ver Detalles</button>
+                </div>
+            </div>
+
+            <!-- Añadir más elementos según sea necesario -->
+        </div>
+
+        <!-- Modal de detalles -->
+        <div class="modal gallery-modal" id="detailsModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header">
+                    <h2></h2>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-gallery"></div>
+                    <div class="modal-info">
+                        <div class="description"></div>
+                        <div class="features"></div>
+                        <div class="pricing"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="book-now">Reservar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
